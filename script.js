@@ -2,41 +2,45 @@
 const menuToggle = document.getElementById('menuToggle');
 const nav = document.getElementById('nav');
 
-menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-});
-
-// Cerrar menú al hacer click en un enlace
-nav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        nav.classList.remove('active');
+if (menuToggle && nav) {
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
     });
-});
 
-// Cerrar menú si hace click fuera
-document.addEventListener('click', (e) => {
-    if (!e.target.closest('.navbar')) {
-        nav.classList.remove('active');
-    }
-});
+    // Cerrar menú al hacer click en un enlace
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+        });
+    });
+
+    // Cerrar menú si hace click fuera
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.navbar')) {
+            nav.classList.remove('active');
+        }
+    });
+}
 
 // ===== BOTÓN IR AL INICIO =====
 const scrollToTopBtn = document.getElementById('scrollToTop');
 
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 300) {
-        scrollToTopBtn.classList.add('show');
-    } else {
-        scrollToTopBtn.classList.remove('show');
-    }
-});
-
-scrollToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+if (scrollToTopBtn) {
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            scrollToTopBtn.classList.add('show');
+        } else {
+            scrollToTopBtn.classList.remove('show');
+        }
     });
-});
+
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
 
 // ===== VALIDAR FORMULARIO =====
 const contactForm = document.querySelector('.contact-form');
@@ -61,7 +65,11 @@ document.querySelectorAll('.btn-principal, .btn-renta-destacado, .btn-renta-nav'
 // ===== EFECTO PARALLAX EN HERO =====
 window.addEventListener('scroll', () => {
     const hero = document.querySelector('.hero');
-    let scrollPosition = window.pageYOffset;
+    if (!hero) {
+        return;
+    }
+
+    const scrollPosition = window.pageYOffset;
     hero.style.backgroundPosition = `center ${scrollPosition * 0.5}px`;
 });
 
@@ -72,8 +80,6 @@ function detectarDispositivo() {
     if (width <= 768) return 'tablet';
     return 'desktop';
 }
-
-console.log('Dispositivo detectado:', detectarDispositivo());
 
 // ===== ANIMACIÓN AL CARGAR =====
 window.addEventListener('load', () => {
