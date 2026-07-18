@@ -73,14 +73,6 @@ window.addEventListener('scroll', () => {
     hero.style.backgroundPosition = `center ${scrollPosition * 0.5}px`;
 });
 
-// ===== DETECCIÓN DE DISPOSITIVO =====
-function detectarDispositivo() {
-    const width = window.innerWidth;
-    if (width <= 480) return 'mobile';
-    if (width <= 768) return 'tablet';
-    return 'desktop';
-}
-
 // ===== ANIMACIÓN AL CARGAR =====
 window.addEventListener('load', () => {
     document.body.style.opacity = '1';
