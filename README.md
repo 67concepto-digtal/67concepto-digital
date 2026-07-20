@@ -143,6 +143,10 @@
                         <a href="#" target="_blank">Facebook</a>
                     </p>
                 </div>
+                <div class="contacto-info">
+                    <h3>🟢 WhatsApp</h3>
+                    <p><a href="https://wa.me/15551234567" target="_blank">Escríbenos directo</a></p>
+                </div>
             </div>
 
             <form class="contact-form">
@@ -875,7 +879,12 @@ const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        alert('¡Gracias por tu mensaje! Nos pondremos en contacto pronto.');
+        const nombre = contactForm.querySelector('input[type="text"]').value.trim();
+        const emailUsuario = contactForm.querySelector('input[type="email"]').value.trim();
+        const mensaje = contactForm.querySelector('textarea').value.trim();
+        const asunto = encodeURIComponent('Mensaje desde la web - ' + nombre);
+        const cuerpo = encodeURIComponent('Nombre: ' + nombre + '\nEmail: ' + emailUsuario + '\n\nMensaje:\n' + mensaje);
+        window.location.href = 'mailto:info@67concepto.com?subject=' + asunto + '&body=' + cuerpo;
         contactForm.reset();
     });
 }
