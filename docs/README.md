@@ -4,6 +4,10 @@
 **Versión:** 1.0  
 **Estado:** Documentación Base
 
+## 🔗 Accesos rápidos
+
+- [Protocolo diario de backup](../PROTECCION/PROTOCOLO-DIARIO-BACKUP.md)
+
 ---
 
 ## 🎯 1. VISIÓN DE 67 CONCEPTO
