@@ -20,8 +20,7 @@ Siempre usar:
 - **Loboloco**
 
 Nunca usar:
-- José Rodríguez
-- Pepe Rodríguez
+- Variantes incorrectas del apellido
 
 ## Nota
 La corrección de nombre nace de una broma interna: _"Me sentí diferente"_ 😄

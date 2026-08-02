@@ -8,7 +8,7 @@ Este archivo preserva el hilo estratégico del proyecto KAI para evitar pérdida
 - También conocido como: **Pepe**
 - Alias adicional: **Loboloco**
 
-> Nota histórica: se aclaró explícitamente que el nombre correcto es Jose Diaz (no Rodríguez).
+> Nota histórica: se aclaró explícitamente que el nombre correcto es Jose Diaz.
 
 ## Resumen de evolución
 1. Se definió que KAI no es un chatbot genérico, sino un consultor estratégico.
