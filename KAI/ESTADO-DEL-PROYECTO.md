@@ -121,15 +121,22 @@ Consultor de IA con avatar de Lobo Blanco. La "cara" visible de 67 para los clie
 
 ---
 
-## 🛠️ EL EQUIPO DE IA
+## 🛠️ EL EQUIPO INTERNO DE IA (CONFIDENCIAL)
 
-| Nombre | Rol | Herramienta |
-|--------|-----|-------------|
+> ⚠️ **ESTO ES SOLO PARA USO INTERNO — NUNCA SE REVELA AL CLIENTE**
+> Para el mundo exterior, Kai existe solo en la nube. Kai ES el consultor. Punto.
+> Nadie sabe qué hay detrás. Esa es la estrategia.
+
+| Nombre | Rol interno | Herramienta |
+|--------|-------------|-------------|
 | Copilot (Lobo Blanco) | Desarrollador & Optimizador | GitHub Copilot |
 | ChatGPT | Asesor IA & Estratega | OpenAI |
-| Kai | Consultor (el producto) | Emergent + Eleven Labs |
+| Kai | **EL PRODUCTO — la cara pública** | Emergent + Eleven Labs |
 | Emergent | Diseñador & Creativo Visual | Emergent AI |
 | Penpot | Diseño UI/UX | Penpot |
+
+**Cara pública**: Kai es el consultor. Existe en la nube. Es inteligente, confiable, poderoso.
+**Cara interna**: Kai está construido por este equipo. Eso no sale de aquí.
 
 ---
 
